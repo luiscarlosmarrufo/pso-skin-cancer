@@ -1,0 +1,71 @@
+{
+  "config": {
+    "DATA_DIR": "../data/data_isic_bin",
+    "IMG_SIZE": 224,
+    "BATCH": 32,
+    "VAL_SPLIT": 0.2,
+    "SEED": 42,
+    "PSO_ITERS": 100,
+    "PSO_C1": 2.5,
+    "PSO_C2": 2.5,
+    "PSO_W": 0.7,
+    "N_PARTICLES": 30,
+    "TARGET_DIM": 508,
+    "N_ESTIMATORS": 30,
+    "K_IN_BASE": 5,
+    "SUBSPACE_FRAC": 0.5
+  },
+  "data_info": {
+    "train_size": 8012,
+    "test_size": 2003,
+    "train_balance": {
+      "benign": 6444,
+      "malignant": 1568
+    },
+    "test_balance": {
+      "benign": 1617,
+      "malignant": 386
+    }
+  },
+  "pso": {
+    "features_original": 1024,
+    "features_selected": 501,
+    "best_cost": 0.17617571353912354
+  },
+  "classifiers": {
+    "Subspace_KNN": {
+      "accuracy": 0.8262606090863704,
+      "sensitivity": 0.20466321243523317,
+      "specificity": 0.9746444032158318,
+      "precision": 0.6583333333333333,
+      "f1": 0.31225296442687744,
+      "confusion_matrix": [
+        [
+          1576,
+          41
+        ],
+        [
+          307,
+          79
+        ]
+      ]
+    },
+    "SVM_RBF": {
+      "accuracy": 0.8377433849226161,
+      "sensitivity": 0.3290155440414508,
+      "specificity": 0.9591836734693877,
+      "precision": 0.6580310880829016,
+      "f1": 0.4386873920552677,
+      "confusion_matrix": [
+        [
+          1551,
+          66
+        ],
+        [
+          259,
+          127
+        ]
+      ]
+    }
+  }
+}

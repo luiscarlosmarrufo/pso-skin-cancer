@@ -1,0 +1,16 @@
+{
+  "DATA_DIR": "../data/data_isic_bin",
+  "IMG_SIZE": 224,
+  "BATCH": 32,
+  "VAL_SPLIT": 0.2,
+  "SEED": 42,
+  "PSO_ITERS": 100,
+  "PSO_C1": 2.5,
+  "PSO_C2": 2.5,
+  "PSO_W": 0.7,
+  "N_PARTICLES": 30,
+  "TARGET_DIM": 508,
+  "N_ESTIMATORS": 30,
+  "K_IN_BASE": 5,
+  "SUBSPACE_FRAC": 0.5
+}
