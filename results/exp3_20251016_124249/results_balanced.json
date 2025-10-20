@@ -1,0 +1,123 @@
+{
+  "all_models": {
+    "SVM_Balanced": {
+      "accuracy": 0.7988017973040439,
+      "balanced_accuracy": 0.7619824660905342,
+      "sensitivity": 0.7020725388601037,
+      "specificity": 0.8218923933209648,
+      "precision": 0.4847942754919499,
+      "f1": 0.5735449735449736,
+      "confusion_matrix": [
+        [
+          1329,
+          288
+        ],
+        [
+          115,
+          271
+        ]
+      ],
+      "false_negatives": 115,
+      "false_positives": 288
+    },
+    "SVM_Linear_Balanced": {
+      "accuracy": 0.7433849226160759,
+      "balanced_accuracy": 0.7513265786766897,
+      "sensitivity": 0.7642487046632125,
+      "specificity": 0.738404452690167,
+      "precision": 0.41086350974930363,
+      "f1": 0.5344202898550725,
+      "confusion_matrix": [
+        [
+          1194,
+          423
+        ],
+        [
+          91,
+          295
+        ]
+      ],
+      "false_negatives": 91,
+      "false_positives": 423
+    },
+    "RandomForest_Balanced": {
+      "accuracy": 0.81827259111333,
+      "balanced_accuracy": 0.5501920975644143,
+      "sensitivity": 0.11398963730569948,
+      "specificity": 0.9863945578231292,
+      "precision": 0.6666666666666666,
+      "f1": 0.19469026548672566,
+      "confusion_matrix": [
+        [
+          1595,
+          22
+        ],
+        [
+          342,
+          44
+        ]
+      ],
+      "false_negatives": 342,
+      "false_positives": 22
+    },
+    "AdaBoost_Balanced": {
+      "accuracy": 0.671992011982027,
+      "balanced_accuracy": 0.6213162608425378,
+      "sensitivity": 0.538860103626943,
+      "specificity": 0.7037724180581324,
+      "precision": 0.3027656477438137,
+      "f1": 0.38769804287045667,
+      "confusion_matrix": [
+        [
+          1138,
+          479
+        ],
+        [
+          178,
+          208
+        ]
+      ],
+      "false_negatives": 178,
+      "false_positives": 479
+    }
+  },
+  "best_model": "SVM_Balanced",
+  "comparison_table": [
+    {
+      "Model": "SVM_Balanced",
+      "Accuracy": 0.7988017973040439,
+      "Balanced Acc": 0.7619824660905342,
+      "Sensitivity": 0.7020725388601037,
+      "Specificity": 0.8218923933209648,
+      "F1": 0.5735449735449736,
+      "False Neg": 115
+    },
+    {
+      "Model": "SVM_Linear_Balanced",
+      "Accuracy": 0.7433849226160759,
+      "Balanced Acc": 0.7513265786766897,
+      "Sensitivity": 0.7642487046632125,
+      "Specificity": 0.738404452690167,
+      "F1": 0.5344202898550725,
+      "False Neg": 91
+    },
+    {
+      "Model": "AdaBoost_Balanced",
+      "Accuracy": 0.671992011982027,
+      "Balanced Acc": 0.6213162608425378,
+      "Sensitivity": 0.538860103626943,
+      "Specificity": 0.7037724180581324,
+      "F1": 0.38769804287045667,
+      "False Neg": 178
+    },
+    {
+      "Model": "RandomForest_Balanced",
+      "Accuracy": 0.81827259111333,
+      "Balanced Acc": 0.5501920975644143,
+      "Sensitivity": 0.11398963730569948,
+      "Specificity": 0.9863945578231292,
+      "F1": 0.19469026548672566,
+      "False Neg": 342
+    }
+  ]
+}

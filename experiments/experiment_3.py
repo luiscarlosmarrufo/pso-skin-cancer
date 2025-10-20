@@ -47,7 +47,7 @@ print(f"📁 Resultados se guardarán en: {RESULTS_DIR}")
 # ==========================================
 CONFIG = {
     # Datos
-    "DATA_DIR": "../data/data_isic_bin",
+    "DATA_DIR": "../../data/data_isic_bin",
     "IMG_SIZE": 224,
     "BATCH": 32,
     "VAL_SPLIT": 0.2,
@@ -399,10 +399,12 @@ with open(RESULTS_DIR / "final_results.json", "w") as f:
     json.dump(final_results, f, indent=2)
 
 # Guardar modelos
+'''
 with open(MODELS_DIR / "subspace_knn.pkl", "wb") as f:
     pickle.dump(model_subspace, f)
 with open(MODELS_DIR / "svm_rbf.pkl", "wb") as f:
     pickle.dump(model_svm, f)
+'''
 
 print(f"\n✅ EXPERIMENTO COMPLETADO")
 print(f"📁 Resultados guardados en: {RESULTS_DIR}")
