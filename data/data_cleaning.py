@@ -1,4 +1,3 @@
-# prep_isic_task3_make_binary.py
 import shutil
 from pathlib import Path
 import pandas as pd
